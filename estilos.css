@@ -1,0 +1,23 @@
+#nave{
+    background: orange;
+}
+
+.uk-navbar-nav>li.uk-active>a{
+    background: red;
+}
+
+.uk-navbar-nav>li.uk-active>a:hover{
+    background: yellow;
+}
+
+.uk-navbar-nav>li>a:hover{
+    background: red;
+}
+
+.uk-navbar-nav>li>div>a:hover{
+    background: green;
+}
+
+.uk-navbar-nav>li>div>a{
+    background: blue;
+}
