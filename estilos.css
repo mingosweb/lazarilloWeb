@@ -24,7 +24,6 @@
 
 .avatar-main{
     background-image: url(perfil.jpg);
-    height: 20em;
 }
 
 .avatar-main:hover{
@@ -36,15 +35,17 @@
     background: rgba(229, 137, 13, 0.12);
 }
 
-#grid-user{
-    padding: 1em;
+#nave li.uk-active a{
+    background: #e07a04;
+    color: white;
+    border: 0.2em solid white;
+    -webkit-border-radius: 1em;
 }
 
-.uk-panel-box>.uk-panel-teaser{
-    margin-top: 0px !important;
-    margin-left: 0px !important;
-    margin-right: 0px !important;
-    height: 90%;
+#panel-usuario .uk-panel-box >.uk-panel-teaser{
+    margin: 0px !important;
+    height: 10em;
+    width: 10em;
     background-image: url(perfil.jpg) !important;
 }
 
@@ -58,31 +59,16 @@
     border-bottom: 0.3em solid #d35f17 !important;
 }
 
-@-webkit-keyframes expulsar{
-    0%{
-        border: 1px solid orange;
-    }
-    
-    10%{
-        border: 5px solid #d69214;
-    }
-    
-    30%{
-        border: 20px solid #ffbd45;
-    }
-    
-    60%{
-        border: 15px solid #c78100;
-    }
-    
-    90%{
-        border: 2px solid orange;
-    }
-}
-
 #panel-usuario{
     padding: 0 !important;
-    height: 18em;
+    background: #ffe8bd;
+    border-bottom: 0.4em solid #ff8900;
+    border-top: 0.4em solid #ff8900;
+    -webkit-border-radius: 1em;
+    -o-border-radius: 1em;
+    -moz-border-radius: 0px 0em 1em 1em;
+    -webkit-box-shadow: 0px 3px 0.3em gray;
+    height: 30em;
 }
 
 #panel-usuario h1{
@@ -136,22 +122,65 @@
      color: white;   
 }
 
+.form-input{
+   height: 2em;
+    color: orangered;
+    background: transparent;
+    border: 0.2em solid orangered;
+    -webkit-border-radius: 1em;
+    padding-left: 30px!important; 
+}
+
+.container-title{
+    border-top: 0.1em dashed orangered;
+}
+
+.container-input{
+    
+}
+
+.container-input input[type="radio"]:checked{
+    background: red;
+}
+
+.form-input::-webkit-input-placeholder{
+     color: orange;   
+}
+
 img.avatar-profile{
     margin: auto;
     height: 45px;
     width: 45px;
     -webkit-border-radius: 50%;
-    border: 5px solid rgba(255,255,255,0.3);
+    border: 5px solid rgb(159, 234, 171);
 }
 
 .title-section{
     color: white;
-    background: #ff7a27;
-    padding: 0.4em 2em;
-    -webkit-border-radius: 2em;
-    /*-webkit-box-shadow: 0px 2px 0.1em rgba(111, 111, 111, 0.78);*/
-    border: 0.1em solid white;
+    background: orange;
+    padding: 0.2em 2em;
+    -webkit-border-radius: 0em 0em 2em 2em;
+    border-top: 0.1em solid orange;
+    border-bottom: 0.2em solid red;
     width: 10em;
+}
+
+.uk-overlay-panel{
+    padding: 0px !important;
+}
+
+.blog-panel-info{
+    background: rgba(0, 0, 0, 0.61) !important;
+    padding: 0.3em;
+}
+
+.panel-section{
+    margin: 0.3em;
+    border: 0.1em solid orange;
+    border-bottom: none;
+    -webkit-border-radius: 0 0em 2em 2em;
+    -webkit-box-shadow: 0em -0.1em 0.01em rgba(255, 240, 211, 0.91);
+    padding: 0 1em 1em 1em;
 }
 
 .panel-info-child img.avatar-child{
@@ -165,6 +194,10 @@ img.avatar-profile{
     -webkit-border-radius: 1em;
     background: none;
     cursor: pointer;
+}
+
+.panel-info-child:hover{    
+    background: #ffecc9 !important;
 }
 
 .panel-info-child .uk-panel-badge{
@@ -182,6 +215,37 @@ img.avatar-child{
     -webkit-border-radius: 50%;
     border: 2px solid rgba(255,255,255,0.3);
 }
+
+.uk-grid-divider:not(:empty) {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#panel-usuario-info{
+    padding: 0px;
+}
+
+#panel-usuario-info .uk-grid-divider{
+    padding: 0px;
+}
+
+.panel-game{
+    border: 0.1em solid rgba(255, 147, 0, 0.77);
+    border-bottom: 0.3em solid rgba(191, 112, 3, 0.77);
+    -webkit-border-radius: 1em;
+    background: none;
+    cursor: pointer;
+}
+
+.uk-mascara{
+    background: rgba(92, 90, 89, 0.87);
+}
+
+uk-mascara-button{
+    background: none;
+    border: 0.3em dashed rgba(255, 204, 111, 0.74);
+}
+
 
 #offcanvas-3{
     background: white;
@@ -202,4 +266,11 @@ img.avatar-child{
 
 .uk-navbar-nav>li{
     margin: auto 1em;
+}
+
+@media (min-width: 768px){
+    .uk-grid-divider>* {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 }

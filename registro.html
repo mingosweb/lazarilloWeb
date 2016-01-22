@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" class="uk-height-1-1">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <title>inicio</title>
+    <link rel="stylesheet" href="css/uikit.min.css">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/components/slider.js"></script>
+    <script src="js/components/lightbox.min.js"></script>
+    <script src="js/components/slideshow.min.js"></script>
+    <script src="js/components/slideset.js"></script>
+    <script src="js/components/slideshow-fx.min.js"></script> 
+    <script src="css/owl.carousel.css"></script>   
+    <script src="css/owl.theme.css"></script>   
+</head>
+<body class="uk-height-1-1">
+
+<!-- NAVBAR -->
+
+<nav id="nave" class="uk-navbar">
+   
+    <a class="uk-navbar-brand uk-hidden-small" href="#">Lazarillo</a>
+    
+    <div class="uk-navbar-content uk-hidden-small">            
+        <ul class="uk-navbar-nav uk-hidden-small">
+            <li class="uk-text-middle uk-active">
+                <a href="#">Dashboard</a>
+            </li>
+            <li class="uk-text-middle">
+                <a href="#">Actividades</a>
+            </li>
+            <li>
+                <a href="#">Articulos</a>
+            </li>
+            <li>
+                <a href="#">Videos</a>
+            </li>
+        </ul>       
+    </div>
+            
+    <div class="uk-navbar-content uk-navbar-flip">
+        <ul class="uk-navbar-nav" data-uk-nav>
+            <li class="uk-parent uk-navbar-flip uk-hidden-small" data-uk-dropdown="{mode:click}">
+                <img class="avatar-profile" src="Background_cuadrado.png" class=".uk-comment-avatar" alt="">
+                    <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-top" style="top: -218px; left: 0px;">
+                        <ul class="uk-nav uk-nav-navbar">
+                            <li><a href="#">Ver perfil <i class="uk-icon-child"></i></a></li>
+                            <li><a href="#">Editar Perfil <i class="uk-icon-edit"></i></a></li>
+                            <li class="uk-nav-header">CUENTA</li>
+                            <li><a href="#">Carro de compras <i class="uk-icon-cart-plus"></i></a></li>
+                            <li><a href="#">Configuración <i class="uk-icon-cog"></i></a></li>
+                            <li class="uk-nav-divider"></li>
+                            <li><a href="#">Ayuda <i class="uk-icon-power-off"></i></a></li>
+                            <li class="uk-nav-divider"></li>
+                            <li><a href="#">Salir <i class="uk-icon-power-off"></i></a></li>
+                        </ul>
+                    </div>
+            </li>
+        </ul>
+    </div>
+            
+    <div class="uk-navbar-content uk-navbar-flip uk-hidden-small">
+        <div class="uk-form-icon">
+            <i class="uk-icon-search"></i>
+            <input type="text" placeholder="Buscar en lazarillo">
+        </div>
+    </div>
+
+    <div class="uk-container uk-container-center">
+        <a data-uk-offcanvas="{target:'#offcanvas-3'}" class="uk-navbar-toggle uk-visible-small"></a>
+        <div class="uk-navbar-brand  uk-visible-small uk-hidden-large uk-hidden-medium">
+            <img src="" title="Mammashop.dk" alt="Mammashop.dk">
+        </div>
+    </div>
+
+</nav>
+
+<!-- CONTENIDO -->        
+<div id="main-panel" class="uk-container-center uk-width-1-2 uk-margin-large-top">
+    <div class="uk-grid uk-grid-medium" data-uk-margin>
+       <div class="panel-section">
+           <h3 class="title-section uk-align-center uk-text-center">
+               Formulario de registro
+           </h3>
+           <div class="uk-grid uk-grid-divider" data-uk-margin>
+               <div class="uk-grid-width-medium-1-1">
+                   <form action="#" method="post">
+                       <div class="uk-form-row">
+                            <div class="container-title">
+                                <h5 class="title-section uk-h5">Datos personales</h5>
+                            </div>
+                            <input class="form-input uk-form-width-large" type="text" name="nombre" placeholder="nombre">
+                       </div>
+                       <div class="uk-form-row">
+                           <input class="form-input uk-form-width-large" type="text" name="apellidos" placeholder="apellidos">
+                       </div>
+                       <div class="uk-form-row uk-grid uk-grid-mini" data-uk-margin>
+                           <div class="uk-width-medium-1-2">
+                               <input class="form-input uk-form-medium" type="date" name="fechaNac" placeholder="fecha de nacimiento">
+                           </div>
+                           <div class="uk-width-medium-1-2">
+                             <div class="container-input">
+                            <label for="">Sexo</label>
+                               <input type="radio" class="uk-form-width-medio" name="genero">hombre
+                               <input type="radio" class="uk-form-width-medio" name="genero">mujer
+                             </div>
+                           </div>
+                       </div>
+                   </form>
+               </div>
+           </div>
+       </div>
+    </div>
+    </div>
+        
+<!-- CANVAS -->        
+<div id="offcanvas-3" class="uk-offcanvas">
+    <div class="uk-offcanvas-bar">
+        <ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav>
+            <li class="HEADER uk-text-center"><a href="">LAZARILLO</a></li>
+            <li class="uk-active"><a href="">Actividades</a></li>
+            <li class=""><a href="">Articulos</a></li>
+            <li class=""><a href="">Videos</a></li>
+            <li class="uk-nav-divider"></li>
+            <li class="uk-parent">
+                <a href="#"><i class="uk-icon-user"></i> Username</a>
+                <ul class="uk-nav-sub">
+                    <li><a href="#">Ver perfil <i class="uk-icon-child"></i></a></li>
+                    <li><a href="#">Editar Perfil <i class="uk-icon-edit"></i></a></li>
+                    <li><a href="#">Carro de compras <i class="uk-icon-cart-plus"></i></a></li>
+                    <li><a href="#">Configuración <i class="uk-icon-cog"></i></a></li>
+                    <li><a href="#">Ayuda <i class="uk-icon-question-circle"></i></a></li>
+                    <li><a href="#">Salir <i class="uk-icon-power-off"></i></a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<script src="js/owl.carousel.js"></script>
+<script>
+    
+    $(".item").not(" :first").hide();
+    
+    $("#owl-blog").owlCarousel({
+        slideSpeed : 300,
+        items: 3,
+        itemsMobile: [479,1],
+        itemsTablet: [768,2],
+        paginationSpeed : 400,
+        // Navigation
+        autoPlay: true,
+        rewindNav : true,
+        scrollPerPage : true,
+        responsive: true,
+        //Pagination
+        paginationNumbers: false
+    });
+</script>
+</body>
+</html>
