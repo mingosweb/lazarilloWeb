@@ -374,3 +374,10 @@ uk-mascara-button{
     }
 
 }
+
+@media (min-width: 768px) and (max-width: 1050px){
+    .uk-navbar-nav>li>a {
+        padding: 0 0.4em !important;
+        font-size: 1em;
+    }
+}
