@@ -39,7 +39,7 @@
 #nave li.uk-active a{
     background: #e07a04;
     color: white;
-    border: 0.2em solid white;
+    border: 0.16em solid white;
     -webkit-border-radius: 1em;
 }
 
@@ -112,6 +112,51 @@
     width: 85%;
 }
 
+.navbar-resource .uk-form-icon:not(.uk-form-icon-flip)>input {
+    height: 2em;
+    color: white;
+    background: rgba(255, 100, 42, 0.73);
+    border: 0.2em solid white;
+    -webkit-border-radius: 1em;
+}
+
+.btn-group-cat > button{
+    background: transparent;
+    color: white;
+}
+
+.btn-group-cat > button:hover{
+    background: orangered;
+    color: white;
+}
+
+.uk-pagination li a{
+    background: #ffdd9f;
+    color: white;
+}
+
+.uk-pagination li a:hover{
+    background: #f7ce83;
+    color: white;
+}
+
+.uk-pagination li a.active{
+    background: #fda90e;
+    color: white;
+}
+
+.btn-group-cat{
+    background: orange;
+}
+
+.navbar-resource{
+    margin: 0.5em auto;
+}
+
+.input-resource{
+    margin: 0.3em auto;
+}
+
 .uk-form-icon:not(.uk-form-icon-flip)>input:focus, input, select {
     outline: none;
 }
@@ -135,6 +180,60 @@
 
 .container-title{
     border-top: 0.1em dashed orangered;
+}
+
+.container-title-resource{
+    /*border-bottom: 0.1em solid orangered;*/
+    -webkit-box-shadow: 0em 0.05em 0.04em #bcbcbc;
+    border-bottom: 0.1em solid orangered;
+    background: orangered;
+    padding: 0.6em;
+}
+
+.title-section-resource{
+    margin: 0;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.uk-panel-details{
+    padding: 20px !important;    
+}
+
+.navbar-menu li a:hover{
+    background: orange;
+    border-left: 0.5em solid orangered;
+}
+
+.navbar-menu-container{
+    border: 0.2em solid orange;
+    -webkit-border-radius: 0 0 2em 2em;
+    -webkit-box-shadow: 0em 0.05em 0.04em #bcbcbc;
+    background: rgba(255, 224, 165, 0.84);
+}
+
+.menu-aside li > a{
+    background: orange !important;
+    color: white !important;
+}
+
+.menu-aside li > a:hover{
+    background: #f7ce83 !important;
+    color: white!important;
+}
+
+.menu-aside > li.active{
+    border-left: 0.7em solid orangered;
+    background: orange !important;
+}
+
+.menu-aside > li:hover{
+    border-left: 0.7em solid orangered;
+}
+
+.menu-aside li.active a{
+    background: rgba(255, 109, 55, 0.65) !important;
 }
 
 #form-register select, input{
@@ -197,7 +296,7 @@ input[type="radio"]:checked + span:after{
     margin-left: 2.2em !important;    
 }
 
-.form-input::-webkit-input-placeholder{
+.form-input::-webkit-input-placeholder, .input-resource{
      color: orange;   
 }
 
@@ -290,10 +389,76 @@ img.avatar-child{
 
 .panel-game{
     border: 0.1em solid rgba(255, 147, 0, 0.77);
-    border-bottom: 0.3em solid rgba(191, 112, 3, 0.77);
+    background: rgba(250, 220, 164, 0.87);
+    -webkit-box-shadow: 0em 0.3em 0.2em #d6d6d6;
+    padding: 0em;
+}
+
+.panel-game .uk-overlay-panel{
+    background: black;
+    height: 100%;
+}
+
+.navbar-resource{
+    background: transparent;
+}
+
+.panel-game .uk-panel-teaser{
+    margin: 0em;
+}
+
+.panel-game .uk-panel-body{
+    padding: 0.5em;
+    text-align: center;
+}
+
+.panel-game .uk-panel-body a{
+    display: block;
+}
+
+.panel-game .uk-panel-title{
+    text-align: center;
+    margin: 0em ;
+    padding-top: 0.5em;
+    background: orange;
+}
+
+.button-free{
+    background: #00c700;
+    border-bottom: 0.2em solid #015301;
     -webkit-border-radius: 1em;
-    background: none;
-    cursor: pointer;
+    color: white;
+}
+
+.button-free:hover{
+    background: #008e00;
+    -webkit-border-radius: 1em;
+    color: white;
+}
+
+.button-premium{
+    background: yellow;
+    color: orange;
+    border-bottom: 0.2em solid orange;
+    -webkit-border-radius: 1em;
+}
+
+.button-premium:hover{
+    background: #ffffa1;
+    -webkit-border-radius: 1em;
+    color: orange;
+}
+
+.panel-game .uk-panel-badge{
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.46);
+}
+
+.panel-game .uk-panel-badge i{
+    color: rgba(255, 255, 0, 0.9);
 }
 
 .uk-mascara{
@@ -371,6 +536,16 @@ uk-mascara-button{
         color: red;
         display: inline-block !important;
         margin-left: 0em !important;    
+    }
+    
+    nav.navbar.resource input.input-resource{
+        height: 2em !important;
+        color: white !important;
+        background: transparent !important;
+        border: 0.2em solid white !important;
+        -webkit-border-radius: 1em !important;
+        padding-left: 30px!important !important;
+        width: 85% !important;   
     }
 
 }

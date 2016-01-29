@@ -8,6 +8,8 @@
     <title>inicio</title>
     <link rel="stylesheet" href="css/uikit.min.css">
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
     <script src="js/uikit.min.js"></script>
@@ -17,8 +19,6 @@
     <script src="js/components/slideset.js"></script>
     <script src="js/components/slideshow-fx.min.js"></script> 
     <script src="js/components/sticky.min.js"></script>
-    <script src="css/owl.carousel.css"></script>   
-    <script src="css/owl.theme.css"></script>   
 </head>
 <body class="uk-height-1-1">
 
@@ -31,18 +31,18 @@
     <div class="uk-navbar-content uk-hidden-small">            
         <ul class="uk-navbar-nav uk-hidden-small">
             <li class="uk-text-middle uk-active">
-                <a href="#">Dashboard</a>
+                <a href="index.html">Dashboard</a>
             </li>
             <li class="uk-text-middle">
-                <a href="#">Actividades</a>
+                <a href="actividades.html">Actividades</a>
             </li>
             <li>
-                <a href="#">Articulos</a>
+                <a href="articulos.html">Articulos</a>
             </li>
             <li>
-                <a href="#">Videos</a>
+                <a href="videos.html">Videos</a>
             </li>
-            <li>
+            <li class="uk-hidden-medium">
                 <a href="registro.html">Login</a>
             </li>
         </ul>       
@@ -50,10 +50,10 @@
             
     <div class="uk-navbar-content uk-navbar-flip">
         <ul class="uk-navbar-nav" data-uk-nav>
-            <li class="uk-parent uk-navbar-flip uk-hidden-small uk-hidden-medium" data-uk-dropdown="{mode:click}">
+            <li class="uk-parent uk-navbar-flip uk-hidden-small" data-uk-dropdown="{mode:click}">
                 <img class="avatar-profile" src="Background_cuadrado.png" class=".uk-comment-avatar" alt="">
-                    <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-top" style="top: -218px; left: 0px;">
-                        <ul class="uk-nav uk-nav-navbar">
+                    <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-top navbar-menu-container" style="top: -218px; left: 0px;">
+                        <ul class="uk-nav uk-nav-navbar navbar-menu">
                             <li><a href="#">Ver perfil <i class="uk-icon-child"></i></a></li>
                             <li><a href="#">Editar Perfil <i class="uk-icon-edit"></i></a></li>
                             <li class="uk-nav-header">CUENTA</li>
@@ -82,7 +82,6 @@
             <img src="" title="Lazarillo" alt="Lazarillo">
         </div>
     </div>
-
 </nav>
 
 <!-- CONTENIDO -->        
@@ -108,19 +107,18 @@
             </div>
             <div class="panel-section">
                 <h3 class="uk-h3 title-section uk-text-center uk-align-center">Actividad Reciente</h3>
-                <div class="uk-panel uk-panel-divider panel-game">
-                    <div class="uk-panel-badge">algo</div>
-                    <div class="uk-panel-teaser">
-                       <figure class="uk-overlay uk-overlay-hover">
-                           <img src="Background_cuadrado.png" alt="">
-                           <figcaption class="uk-overlay-panel uk-flex uk-flex-center uk-flex-middle uk-text-center uk-mascara">
-                               <button class="uk-mascara-button uk-button uk-border-circle"><i class="uk-icon-play"></i></button>
-                           </figcaption>
-                       </figure>
-                    </div>
-                        <i class="uk-icon-user"></i><label for=""> +18</label>
-                        <i class="uk-icon-heart"></i><label for=""> comunicacion</label>
-                        <i class="uk-icon-star"></i><label for=""> recomendado</label>
+                <div class="uk-panel uk-panel-box panel-game">
+                                    <div class="uk-panel-teaser">
+                                       <figure class="uk-overlay uk-overlay-hover">
+                                           <img src="pantallazo_1.png" alt="bombardeo" class="uk-overlay-scale">
+                                           <figcaption class="uk-overlay-panel uk-overlay-slide-top">
+                                               <button class="uk-button button-premium"><i class="uk-icon-play"></i> JUGAR</button>
+                                           </figcaption>
+                                       </figure>
+                                    </div>
+                                    <h2 class="uk-panel-title">
+                                        Juego semantico
+                                    </h2>
                 </div>
             </div>
         </div>
@@ -244,16 +242,16 @@
         </ul>
     </div>
 </div>
-<script src="js/owl.carousel.js"></script>
+
+<script src="owl-carousel/owl.carousel.min.js"></script>
 <script>
     
-    $(".item").not(" :first").hide();
-    
-    $("#owl-blog").owlCarousel({
+    $(window).ready(function(){
+        $("#owl-blog").owlCarousel({
         slideSpeed : 300,
         items: 3,
-        itemsMobile: [479,1],
-        itemsTablet: [768,2],
+        itemsMobile: [479,2],
+        itemsTablet: [768,3],
         paginationSpeed : 400,
         // Navigation
         autoPlay: true,
@@ -262,7 +260,11 @@
         responsive: true,
         //Pagination
         paginationNumbers: false
+    });    
     });
+    
+    //$(".item").not(" :first").hide();
+    
 </script>
 </body>
 </html>

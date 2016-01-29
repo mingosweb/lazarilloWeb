@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>La chucha y la monda</title>
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+    <link rel="stylesheet" href="owl-carousel/owl.transitions.css">
+    <link rel="stylesheet" href="js/jquery-1.11.3.min.js">
+    <style>
+        .cuadro:nth-child(even){
+            background: blue;
+            height: 12em;
+            width: 12em;
+        }
+        
+        .cuadro{
+            background: red;
+            height: 12em;
+            width: 12em;
+        }
+        
+    </style>
+</head>
+<body>
+    <h3>hola</h3>
+    <div class="cuadro-padreowl-theme" id="padre">
+        <div class="owl-item"><div class="item cuadro"><img src="" alt="Owl Image"></div></div>
+        <div class="owl-item"><div class="item cuadro">hi</div></div>
+        <div class="owl-item"><div class="item cuadro">hi</div></div>
+        <div class="owl-item"><div class="item cuadro">hi</div></div>
+    </div>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script>
+        $(window).ready(function(){
+            $("#padre").owlCarousel({
+                items: 5
+            }
+            );
+        });
+    </script>
+</body>
+</html>
