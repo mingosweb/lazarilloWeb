@@ -118,6 +118,7 @@
     background: rgba(255, 100, 42, 0.73);
     border: 0.2em solid white;
     -webkit-border-radius: 1em;
+    width: 80%;
 }
 
 .btn-group-cat > button{
@@ -545,7 +546,6 @@ uk-mascara-button{
         border: 0.2em solid white !important;
         -webkit-border-radius: 1em !important;
         padding-left: 30px!important !important;
-        width: 85% !important;   
     }
 
 }
