@@ -121,6 +121,12 @@
     width: 80%;
 }
 
+.panel-game figcaption button{
+    height: 1em;
+    margin: auto;
+    margin-top: 5em;
+}
+
 .btn-group-cat > button{
     background: transparent;
     color: white;
@@ -334,7 +340,7 @@ img.avatar-profile{
 }
 
 .panel-section{
-    margin: 0.2em auto;
+    margin: 1em auto;
     border: 0.1em solid orange;
     border-bottom: none;
     -webkit-border-radius: 0 0em 2em 2em;
@@ -396,7 +402,7 @@ img.avatar-child{
 }
 
 .panel-game .uk-overlay-panel{
-    background: black;
+    background: rgba(0, 0, 0, 0.58);
     height: 100%;
 }
 
@@ -420,7 +426,6 @@ img.avatar-child{
 .panel-game .uk-panel-title{
     text-align: center;
     margin: 0em ;
-    padding-top: 0.5em;
     background: orange;
 }
 
@@ -429,6 +434,60 @@ img.avatar-child{
     border-bottom: 0.2em solid #015301;
     -webkit-border-radius: 1em;
     color: white;
+}
+
+#categoria-select{
+    height: 2em;
+    -webkit-border-radius: 5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    background-color: orange;
+    color: white;
+}
+
+#categoria-select option{
+    background: #ff8a5e !important;
+    height: 2em !important;
+}
+
+.panel-profile{
+    background: #ffeac4;
+    -webkit-box-shadow: 0em 0.2em 0.3em #8e8d8d;
+    width: 80%;
+    margin: auto;
+}
+
+.panel-profile .uk-panel-title h2{
+    background: orange;
+    color: white;
+    border-bottom: 0.1em solid orangered;
+}
+
+.panel-profile .uk-panel-badge button{
+    background: orangered;
+    color: white;
+    border-bottom: 0.1em solid orange;
+}
+
+.panel-profile .uk-panel-badge button:hover{
+    background: #ff7f4f;
+    color: white;
+    border-bottom: 0.1em solid orangered;
+}
+
+.navbar-title-resource span, navbar-title-resource button > i{
+    font-size: 1.5em;
+}
+
+.panel-profile .uk-panel-details{
+    padding: 0 20px !important;
+}
+
+.panel-profile img{
+    -webkit-border-radius: 50%;
+    height: 12em;
+    width: 12em;
+    background-size: 100%;
 }
 
 .button-free:hover{

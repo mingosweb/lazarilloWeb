@@ -87,7 +87,7 @@
 <!-- CONTENIDO -->        
 <div id="main-panel" class="uk-container-center uk-width-4-5 uk-margin-large-top">
    <div class="container-title-resource uk-container-center">
-       <h2 class="title-section-resource"><i class="uk-icon-gamepad"></i> Actividades</h2>
+       <h2 class="title-section-resource"><i class="uk-icon-video-camera"></i> Videos</h2>
    </div>
     <div class="uk-grid uk-grid-medium" data-uk-margin>
                   <div class="uk-width-medium-1-4 uk-width-large-1-4">
@@ -104,13 +104,22 @@
                                <i class="uk-icon-search"></i>
                                 <input type="text" class="input-resource" placeholder="Buscar">
                             </div>
-                            <div class="uk-navbar-content uk-navbar-flip">
+                            <div class="uk-navbar-content uk-navbar-flip uk-hidden-large">
                                 <div class="uk-button-group btn-group-cat">
                                     <button class="uk-button"><i class="uk-icon-star"></i></button>
                                     <button class="uk-button"><i class="uk-icon-heart"></i></button>
                                     <button class="uk-button"><i class="uk-icon-child"></i></button>
                                     <button class="uk-button"><i class="uk-icon-pencil"></i></button>
                                 </div>
+                            </div>
+                            <div class="uk-navbar-content uk-navbar-flip">
+                                <select name="categoria" id="categoria-select">
+                                    <option value="menorPrice">Menor Precio</option>
+                                    <option value="mayorPrice">Mayor Precio</option>
+                                    <option value="a2z">A - Z</option>
+                                    <option value="z2a">Z - A</option>
+                                    <option value="free">Gratis</option>
+                                </select>
                             </div>
                         </nav>
                         
