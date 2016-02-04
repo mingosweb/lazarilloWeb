@@ -6,12 +6,16 @@
     color: white;
 }
 
+#toggle-menu{
+        visibility: hidden;
+}
+
 .uk-navbar-nav>li.uk-active>a:hover{
     background: yellow;
 }
 
 .uk-navbar-brand a{
-    color white !important;
+    color: white !important;
     cursor: pointer;
 }
 
@@ -104,9 +108,9 @@
 }
 
 .uk-navbar-brand{
-    color: white;
     font-size: 1.7em;
     padding: 0.3em auto;
+    color: white !important;
 }
 
 .uk-navbar-brand:hover{
@@ -689,6 +693,10 @@ uk-mascara-button{
         padding-left: 30px!important !important;
     }
     
+    #toggle-menu{
+        visibility: visible;
+    }
+    
     
 
 }
@@ -698,4 +706,9 @@ uk-mascara-button{
         padding: 0 0.4em !important;
         font-size: 1em;
     }
+    
+    #toggle-menu{
+        visibility: visible;
+    }
+    
 }
