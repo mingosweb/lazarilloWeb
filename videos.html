@@ -24,13 +24,14 @@
 
 <!-- NAVBAR -->
 
-<nav id="nave" class="uk-navbar" data-uk-sticky>
+<div class="uk-sticky-placeholder" style="height: 68px; margin: 0px;">
+  <nav id="nave" class="uk-navbar uk-sticky-init uk-active" data-uk-sticky="" style="position: fixed; top: 0px; width: 1349px; left: 0px;">
    
-    <a class="uk-navbar-brand uk-hidden-small" href="index.html">Lazarillo</a>
+    <a class="uk-navbar-brand uk-hidden-small uk-hidden-medium" href="index.html">Lazarillo</a>
     
-    <div class="uk-navbar-content uk-hidden-small">            
-        <ul class="uk-navbar-nav uk-hidden-small">
-            <li class="uk-text-middle">
+    <div class="uk-navbar-content uk-hidden-small uk-hidden-medium">            
+        <ul class="uk-navbar-nav uk-hidden-small uk-hidden-medium">
+            <li class="uk-text-middle uk-active">
                 <a href="index.html">Dashboard</a>
             </li>
             <li class="uk-text-middle">
@@ -39,7 +40,7 @@
             <li>
                 <a href="articulos.html">Articulos</a>
             </li>
-            <li class="uk-active">
+            <li>
                 <a href="videos.html">Videos</a>
             </li>
             <li class="uk-hidden-medium">
@@ -49,10 +50,10 @@
     </div>
             
     <div class="uk-navbar-content uk-navbar-flip">
-        <ul class="uk-navbar-nav" data-uk-nav>
-            <li class="uk-parent uk-navbar-flip uk-hidden-small" data-uk-dropdown="{mode:click}">
-                <img class="avatar-profile" src="Background_cuadrado.png" class=".uk-comment-avatar" alt="">
-                    <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-top navbar-menu-container" style="top: -218px; left: 0px;">
+        <ul class="uk-navbar-nav" data-uk-nav="">
+            <li class="uk-parent uk-navbar-flip uk-hidden-small" data-uk-dropdown="{mode:click}" aria-haspopup="true" aria-expanded="false">
+                <img class="avatar-profile" src="Background_cuadrado.png" alt="">
+                    <div class="uk-dropdown uk-dropdown-navbar navbar-menu-container uk-dropdown-bottom" style="top: 45px; left: -155px;">
                         <ul class="uk-nav uk-nav-navbar navbar-menu">
                             <li><a href="#">Ver perfil <i class="uk-icon-child"></i></a></li>
                             <li><a href="#">Editar Perfil <i class="uk-icon-edit"></i></a></li>
@@ -69,20 +70,20 @@
         </ul>
     </div>
             
-    <div class="uk-navbar-content uk-navbar-flip uk-hidden-small">
+    <div class="uk-navbar-content uk-navbar-flip uk-hidden-small uk-hidden-medium">
         <div class="uk-form-icon">
             <i class="uk-icon-search"></i>
             <input type="text" placeholder="Buscar en lazarillo">
         </div>
     </div>
 
-    <div class="uk-container uk-container-center">
-        <a data-uk-offcanvas="{target:'#offcanvas-3'}" class="uk-navbar-toggle uk-visible-small"></a>
-        <div class="uk-navbar-brand  uk-visible-small uk-hidden-large uk-hidden-medium">
-            <img src="" title="Lazarillo" alt="Lazarillo">
+    <div id="toggle-menu" class="uk-navbar-content">
+        <a data-uk-offcanvas="{target:'#offcanvas-3'}" class="uk-navbar-toggle"></a>
+        <div class="uk-navbar-brand">
+            <a href="index.html">Lazarillo</a>
         </div>
     </div>
-</nav>
+</nav></div>
 
 <!-- CONTENIDO -->        
 <div id="main-panel" class="uk-container-center uk-width-4-5 uk-margin-large-top">
