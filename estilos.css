@@ -628,6 +628,10 @@ uk-mascara-button{
         font-weight: bold;
 }
 
+#grid-user{
+    padding: 0;
+}
+
 @media (max-width: 768px){
     
     .uk-grid-divider>* {
@@ -635,9 +639,9 @@ uk-mascara-button{
         padding-right: 0px;
     }
     
-    .main-panel{
+    #main-panel{
         margin: 0.5em;
-        padding: 0em 4em;
+        padding: 0em 1em !important;
     }
     
     .container-input{
@@ -647,7 +651,7 @@ uk-mascara-button{
     }
     
     .panel-profile{
-        width: 100%;
+        width: 90%;
     }
     
     #form-register .uk-grid:nth-child(3) [class*=uk-width]:nth-child(2) > *{
@@ -684,6 +688,8 @@ uk-mascara-button{
         -o-border-radius: 1em !important;
         padding-left: 30px!important !important;
     }
+    
+    
 
 }
 
