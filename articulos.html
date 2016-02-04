@@ -86,7 +86,7 @@
 </nav></div>
 
 <!-- CONTENIDO -->        
-<div id="main-panel" class="uk-container-center uk-width-4-5 uk-margin-large-top">
+<div id="main-panel" class="uk-container-center">
    <div class="container-title-resource uk-container-center">
        <h2 class="title-section-resource"><i class="uk-icon-file-text"></i> Articulos</h2>
    </div>
@@ -106,12 +106,13 @@
                                 <input type="text" class="input-resource" placeholder="Buscar">
                             </div>
                             <div class="uk-navbar-content uk-navbar-flip">
-                                <div class="uk-button-group btn-group-cat">
-                                    <button class="uk-button"><i class="uk-icon-star"></i></button>
-                                    <button class="uk-button"><i class="uk-icon-heart"></i></button>
-                                    <button class="uk-button"><i class="uk-icon-child"></i></button>
-                                    <button class="uk-button"><i class="uk-icon-pencil"></i></button>
-                                </div>
+                                <select name="categoria" id="categoria-select">
+                                    <option value="menorPrice">Menor Precio</option>
+                                    <option value="mayorPrice">Mayor Precio</option>
+                                    <option value="a2z">A - Z</option>
+                                    <option value="z2a">Z - A</option>
+                                    <option value="free">Gratis</option>
+                                </select>
                             </div>
                         </nav>
                         
@@ -135,7 +136,7 @@
                             </li>
                         </ul>
                         
-                        <ul class="uk-grid uk-grid-medium uk-grid-width-medium-1-3 uk-grid-width-small-1-2" data-uk-margin>
+                        <ul class="uk-grid uk-grid-large uk-grid-width-medium-1-2 uk-grid-width-small-1-2" data-uk-grid-margin>
                             <li class="container-resource">
                                 <div class="uk-panel uk-panel-box panel-game">
                                     <div class="uk-panel-teaser">
