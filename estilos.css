@@ -2,10 +2,17 @@
     background: orange;
     padding: 1em;
     z-index: 2;
+    width: 100% !important;
+    color: white;
 }
 
 .uk-navbar-nav>li.uk-active>a:hover{
     background: yellow;
+}
+
+.uk-navbar-brand a{
+    color white !important;
+    cursor: pointer;
 }
 
 .uk-panel-box {
@@ -29,6 +36,8 @@
 
 .avatar-main:hover{
     -webkit-animation: expulsar 0.3s 1;
+    -moz-animation: expulsar 0.3s 1;
+    -o-animation: expulsar 0.3s 1;
 }
 
 #info-user{
@@ -41,6 +50,8 @@
     color: white;
     border: 0.16em solid white;
     -webkit-border-radius: 1em;
+    -o-border-radius: 1em;
+    -moz-border-radius: 1em;
 }
 
 #panel-usuario .uk-panel-box >.uk-panel-teaser{
@@ -81,6 +92,8 @@
     background: transparent;
     border: 1px solid white;
     -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 .uk-navbar-nav>li>a{
@@ -108,6 +121,8 @@
     background: transparent;
     border: 0.2em solid white;
     -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -o-border-radius: 1em;
     padding-left: 30px!important;
     width: 85%;
 }
@@ -118,6 +133,8 @@
     background: rgba(255, 100, 42, 0.73);
     border: 0.2em solid white;
     -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -o-border-radius: 1em;
     width: 80%;
 }
 
@@ -176,12 +193,22 @@
      color: white;   
 }
 
+::-moz-input-placeholder{
+     color: white;   
+}
+
+::-o-input-placeholder{
+     color: white;   
+}
+
 .form-input{
    height: 2em;
     color: orangered;
     background: transparent;
     border: 0.2em solid orangered;
     -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -o-border-radius: 1em;
     padding-left: 30px!important; 
 }
 
@@ -192,6 +219,8 @@
 .container-title-resource{
     /*border-bottom: 0.1em solid orangered;*/
     -webkit-box-shadow: 0em 0.05em 0.04em #bcbcbc;
+    -moz-box-shadow: 0em 0.05em 0.04em #bcbcbc;
+    -o-box-shadow: 0em 0.05em 0.04em #bcbcbc;
     border-bottom: 0.1em solid orangered;
     background: orangered;
     padding: 0.6em;
@@ -205,7 +234,7 @@
 }
 
 .uk-panel-details{
-    padding: 20px !important;    
+    padding: 40px !important;    
 }
 
 .navbar-menu li a:hover{
@@ -216,7 +245,11 @@
 .navbar-menu-container{
     border: 0.2em solid orange;
     -webkit-border-radius: 0 0 2em 2em;
+    -moz-border-radius: 0 0 2em 2em;
+    -o-border-radius: 0 0 2em 2em;
     -webkit-box-shadow: 0em 0.05em 0.04em #bcbcbc;
+    -moz-box-shadow: 0em 0.05em 0.04em #bcbcbc;
+    -o-box-shadow: 0em 0.05em 0.04em #bcbcbc;
     background: rgba(255, 224, 165, 0.84);
 }
 
@@ -263,7 +296,9 @@
 
 .inputFalse{
     border: 2px solid #dedede;
-    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
     display: inline-block;
     height: 20px;
     position: absolute;
@@ -286,6 +321,8 @@ input[type="radio"]:checked + span:after{
     background: orange;
     color: white;
     -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -o-border-radius: 1em;
     font-size: 1.2em;
     border: 0.4em Double white;
 }
@@ -293,7 +330,11 @@ input[type="radio"]:checked + span:after{
 #form-register input[type="submit"]:hover{
     background: orangered;
     -webkit-box-shadow: 0em 0.2em 0.1em gray;
+    -moz-box-shadow: 0em 0.2em 0.1em gray;
+    -o-box-shadow: 0em 0.2em 0.1em gray;
     -webkit-transform: scale(0.1em);
+    -moz-transform: scale(0.1em);
+    -o-transform: scale(0.1em);
     border: 0.4em Double white;
 }
 
@@ -312,14 +353,17 @@ img.avatar-profile{
     height: 45px;
     width: 45px;
     -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
     border: 5px solid rgb(159, 234, 171);
 }
 
 .title-section{
     color: white;
     background: orange;
-    padding: 0em 1em;
     -webkit-border-radius: 0em 0em 2em 2em;
+    -moz-border-radius: 0em 0em 2em 2em;
+    -o-border-radius: 0em 0em 2em 2em;
     border-top: 0.1em solid orange;
     border-bottom: 0.2em solid red;
     width: 10em;
@@ -337,6 +381,7 @@ img.avatar-profile{
 
 #main-panel{
     margin-top: 3em !important;
+    padding: 0em 4em;
 }
 
 .panel-section{
@@ -344,7 +389,11 @@ img.avatar-profile{
     border: 0.1em solid orange;
     border-bottom: none;
     -webkit-border-radius: 0 0em 2em 2em;
+    -moz-border-radius: 0 0em 2em 2em;
+    -o-border-radius: 0 0em 2em 2em;
     -webkit-box-shadow: 0em -0.1em 0.01em rgba(255, 240, 211, 0.91);
+    -moz-box-shadow: 0em -0.1em 0.01em rgba(255, 240, 211, 0.91);
+    -o-box-shadow: 0em -0.1em 0.01em rgba(255, 240, 211, 0.91);
     padding: 0 1em 1em 1em;
 }
 
@@ -357,6 +406,8 @@ img.avatar-profile{
     border: 0.1em dashed rgba(255, 147, 0, 0.77);
     border-bottom: 0.3em solid rgba(191, 112, 3, 0.77);
     -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -o-border-radius: 1em;
     background: none;
     cursor: pointer;
 }
@@ -370,6 +421,8 @@ img.avatar-profile{
     top: 0px;
     right: 0px;
     -webkit-border-radius: 0 .6em 0 1em;
+    -moz-border-radius: 0 .6em 0 1em;
+    -o-border-radius: 0 .6em 0 1em;
     color: white;
 }
 
@@ -378,6 +431,8 @@ img.avatar-child{
     height: 80px;
     width: 80px;
     -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
     border: 2px solid rgba(255,255,255,0.3);
 }
 
@@ -398,6 +453,8 @@ img.avatar-child{
     border: 0.1em solid rgba(255, 147, 0, 0.77);
     background: rgba(250, 220, 164, 0.87);
     -webkit-box-shadow: 0em 0.3em 0.2em #d6d6d6;
+    -moz-box-shadow: 0em 0.3em 0.2em #d6d6d6;
+    -o-box-shadow: 0em 0.3em 0.2em #d6d6d6;
     padding: 0em;
 }
 
@@ -433,12 +490,16 @@ img.avatar-child{
     background: #00c700;
     border-bottom: 0.2em solid #015301;
     -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -o-border-radius: 1em;
     color: white;
 }
 
 #categoria-select{
     height: 2em;
     -webkit-border-radius: 5em;
+    -moz-border-radius: 5em;
+    -o-border-radius: 5em;
     padding-left: 2em;
     padding-right: 2em;
     background-color: orange;
@@ -453,6 +514,8 @@ img.avatar-child{
 .panel-profile{
     background: #ffeac4;
     -webkit-box-shadow: 0em 0.2em 0.3em #8e8d8d;
+    -moz-box-shadow: 0em 0.2em 0.3em #8e8d8d;
+    -o-box-shadow: 0em 0.2em 0.3em #8e8d8d;
     width: 80%;
     margin: auto;
 }
@@ -485,6 +548,8 @@ img.avatar-child{
 
 .panel-profile img{
     -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
     height: 12em;
     width: 12em;
     background-size: 100%;
@@ -493,6 +558,8 @@ img.avatar-child{
 .button-free:hover{
     background: #008e00;
     -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -o-border-radius: 1em;
     color: white;
 }
 
@@ -501,11 +568,15 @@ img.avatar-child{
     color: orange;
     border-bottom: 0.2em solid orange;
     -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -o-border-radius: 1em;
 }
 
 .button-premium:hover{
     background: #ffffa1;
     -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -o-border-radius: 1em;
     color: orange;
 }
 
@@ -532,7 +603,7 @@ uk-mascara-button{
 
 
 #offcanvas-3{
-    background: white;
+    background: rgba(224, 129, 0, 0.62);
 }
 
 .uk-dropdown-navbar{
@@ -566,12 +637,17 @@ uk-mascara-button{
     
     .main-panel{
         margin: 0.5em;
+        padding: 0em 4em;
     }
     
     .container-input{
         display: block;
         margin: 0.5em auto;
         padding-left: 6em;
+    }
+    
+    .panel-profile{
+        width: 100%;
     }
     
     #form-register .uk-grid:nth-child(3) [class*=uk-width]:nth-child(2) > *{
@@ -604,6 +680,8 @@ uk-mascara-button{
         background: transparent !important;
         border: 0.2em solid white !important;
         -webkit-border-radius: 1em !important;
+        -moz-border-radius: 1em !important;
+        -o-border-radius: 1em !important;
         padding-left: 30px!important !important;
     }
 

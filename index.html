@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" class="uk-height-1-1">
-<head>
+<html lang="en" class="uk-height-1-1 uk-notouch"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <title>inicio</title>
     <link rel="stylesheet" href="css/uikit.min.css">
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
     <link rel="stylesheet" href="owl-carousel/owl.theme.css">
-    <script src="js/jquery-1.11.3.min.js"></script>
+    <style type="text/css"></style><script src="js/jquery-1.11.3.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
     <script src="js/uikit.min.js"></script>
     <script src="js/components/slider.js"></script>
@@ -24,12 +23,13 @@
 
 <!-- NAVBAR -->
 
-<nav id="nave" class="uk-navbar" data-uk-sticky>
+<div class="uk-sticky-placeholder" style="height: 68px; margin: 0px;">
+  <nav id="nave" class="uk-navbar uk-sticky-init uk-active" data-uk-sticky="" style="position: fixed; top: 0px; width: 1349px; left: 0px;">
    
-    <a class="uk-navbar-brand uk-hidden-small" href="index.html">Lazarillo</a>
+    <a class="uk-navbar-brand uk-hidden-small uk-hidden-medium" href="index.html">Lazarillo</a>
     
-    <div class="uk-navbar-content uk-hidden-small">            
-        <ul class="uk-navbar-nav uk-hidden-small">
+    <div class="uk-navbar-content uk-hidden-small uk-hidden-medium">            
+        <ul class="uk-navbar-nav uk-hidden-small uk-hidden-medium">
             <li class="uk-text-middle uk-active">
                 <a href="index.html">Dashboard</a>
             </li>
@@ -49,10 +49,10 @@
     </div>
             
     <div class="uk-navbar-content uk-navbar-flip">
-        <ul class="uk-navbar-nav" data-uk-nav>
-            <li class="uk-parent uk-navbar-flip uk-hidden-small" data-uk-dropdown="{mode:click}">
-                <img class="avatar-profile" src="Background_cuadrado.png" class=".uk-comment-avatar" alt="">
-                    <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-top navbar-menu-container" style="top: -218px; left: 0px;">
+        <ul class="uk-navbar-nav" data-uk-nav="">
+            <li class="uk-parent uk-navbar-flip uk-hidden-small" data-uk-dropdown="{mode:click}" aria-haspopup="true" aria-expanded="false">
+                <img class="avatar-profile" src="Background_cuadrado.png" alt="">
+                    <div class="uk-dropdown uk-dropdown-navbar navbar-menu-container uk-dropdown-bottom" style="top: 45px; left: -155px;">
                         <ul class="uk-nav uk-nav-navbar navbar-menu">
                             <li><a href="#">Ver perfil <i class="uk-icon-child"></i></a></li>
                             <li><a href="#">Editar Perfil <i class="uk-icon-edit"></i></a></li>
@@ -69,7 +69,7 @@
         </ul>
     </div>
             
-    <div class="uk-navbar-content uk-navbar-flip uk-hidden-small">
+    <div class="uk-navbar-content uk-navbar-flip uk-hidden-small uk-hidden-medium">
         <div class="uk-form-icon">
             <i class="uk-icon-search"></i>
             <input type="text" placeholder="Buscar en lazarillo">
@@ -77,19 +77,19 @@
     </div>
 
     <div class="uk-container uk-container-center">
-        <a data-uk-offcanvas="{target:'#offcanvas-3'}" class="uk-navbar-toggle uk-visible-small"></a>
-        <div class="uk-navbar-brand  uk-visible-small uk-hidden-large uk-hidden-medium">
-            <img src="" title="Lazarillo" alt="Lazarillo">
+        <a data-uk-offcanvas="{target:'#offcanvas-3'}" class="uk-navbar-toggle uk-visible-small uk-visble-medium"></a>
+        <div class="uk-navbar-brand uk-visible-small uk-hidden-large">
+            <a href="index.html">Lazarillo</a>
         </div>
     </div>
-</nav>
+</nav></div>
 
 <!-- CONTENIDO -->        
-<div id="main-panel" class="uk-container-center uk-width-4-5 uk-margin-large-top">
-    <div class="uk-grid uk-grid-medium" data-uk-margin>
-       <div id="grid-user" class="uk-width-medium-1-3 uk-width-small-1-1">
+<div id="main-panel" class="uk-container-center uk-width-1-1 uk-margin-large-top">
+    <div class="uk-grid uk-grid-small" data-uk-margin="">
+       <div id="grid-user" class="uk-width-medium-1-1 uk-width-large-1-3 uk-width-small-1-1">
             
-                <div class="uk-panel panel-profile">
+                <div class="uk-panel panel-profile uk-margin-small">
                    <div class="uk-panel-title"><h2 class="uk-h2 uk-text-center">Perfil</h2></div>
                     <div class="uk-panel-badge">  <button class="uk-button"><i class="uk-icon-pencil"></i></button> </div>
                     <div class="uk-panel-teaser">
@@ -137,11 +137,11 @@
             </div>
         </div>
         
-        <div class="uk-width-medium-2-3 uk-width-small-1-1">
+        <div class="uk-width-medium-1-1 uk-width-small-1-1 uk-width-large-2-3">
           <div class="panel-section">
             <h3 class="uk-h3 title-section uk-text-center uk-align-center"><i class="uk-icon-child"></i><i class="uk-icon-child"></i> Tus chicos</h3>
-            <ul class="uk-grid uk-grid-width-medium-1-5 uk-grid-width-small-1-3 uk-grid-small" data-uk-grid-margin>
-                <li>
+            <ul class="uk-grid uk-grid-width-medium-1-2 uk-grid-width-large-1-5 uk-grid-width-small-1-3 uk-grid-large" data-uk-grid-margin="">
+                <li class="uk-row-first">
                     <div class="panel-info-child uk-panel uk-panel-hover uk-text-center">
                         <div class="uk-panel-teaser">
                             <img src="perfil.jpg" class="avatar-child uk-align-center" alt="">
@@ -152,7 +152,7 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li class="">
                     <div class="panel-info-child uk-panel uk-panel-hover uk-text-center">
                         <div class="uk-panel-teaser">
                             <img src="perfil.jpg" class="avatar-child uk-align-center" alt="">
@@ -163,7 +163,7 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li class="">
                     <div class="panel-info-child uk-panel uk-panel-hover uk-text-center">
                         <div class="uk-panel-teaser">
                             <img src="perfil.jpg" class="avatar-child uk-align-center" alt="">
@@ -174,7 +174,7 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li class="">
                     <div class="panel-info-child uk-panel uk-panel-hover uk-text-center">
                         <div class="uk-panel-teaser">
                             <img src="perfil.jpg" class="avatar-child uk-align-center" alt="">
@@ -185,7 +185,7 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li class="">
                     <div class="panel-info-child uk-panel uk-panel-hover uk-text-center">
                         <div class="uk-panel-teaser">
                             <img src="perfil.jpg" class="avatar-child uk-align-center" alt="">
@@ -200,8 +200,8 @@
           </div>
             <div class="panel-section">
                <h3 class="uk-h3 title-section uk-text-center uk-align-center"> Novedades </h3>
-                <ul class="uk-grid uk-grid-width-medium-1-2" data-uk-grid-margin>
-                <li>
+                <ul class="uk-grid uk-grid-width-medium-1-2" data-uk-grid-margin="">
+                <li class="uk-row-first">
                         <figure class="uk-overlay uk-overlay-hover">
                             <img src="Background_cuadrado.png" class="uk-overlay-scale" alt="">
                             <figcaption class="uk-overlay-panel uk-overlay-slide-top">
@@ -209,7 +209,7 @@
                             </figcaption>
                         </figure>
                 </li>
-                <li>
+                <li class="">
                         <figure class="uk-overlay uk-overlay-hover">
                             <img src="Background_cuadrado.png" class="uk-overlay-scale" alt="">
                             <figcaption class="uk-overlay-panel uk-overlay-slide-top">
@@ -217,7 +217,7 @@
                             </figcaption>
                         </figure>
                 </li>
-                <li>
+                <li class="uk-grid-margin uk-row-first">
                         <figure class="uk-overlay uk-overlay-hover">
                             <img src="Background_cuadrado.png" class="uk-overlay-scale" alt="">
                             <figcaption class="uk-overlay-panel uk-overlay-slide-top">
@@ -236,7 +236,7 @@
 <!-- CANVAS -->        
 <div id="offcanvas-3" class="uk-offcanvas">
     <div class="uk-offcanvas-bar">
-        <ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav>
+        <ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav="">
             <li class="HEADER uk-text-center"><a href="index.html">LAZARILLO</a></li>
             <li class="uk-active"><a href="index.html">Dashboard</a></li>
             <li class="uk-active"><a href="actividades.html">Actividades</a></li>
@@ -244,16 +244,16 @@
             <li class=""><a href="videos.html">Videos</a></li>
             <li class=""><a href="registro.html">Login</a></li>
             <li class="uk-nav-divider"></li>
-            <li class="uk-parent">
+            <li class="uk-parent" aria-expanded="false">
                 <a href="#"><i class="uk-icon-user"></i> Username</a>
-                <ul class="uk-nav-sub">
+                <div style="overflow:hidden;height:0;position:relative;" class="uk-hidden"><ul class="uk-nav-sub">
                     <li><a href="#">Ver perfil <i class="uk-icon-child"></i></a></li>
                     <li><a href="#">Editar Perfil <i class="uk-icon-edit"></i></a></li>
                     <li><a href="#">Carro de compras <i class="uk-icon-cart-plus"></i></a></li>
                     <li><a href="#">Configuración <i class="uk-icon-cog"></i></a></li>
                     <li><a href="#">Ayuda <i class="uk-icon-question-circle"></i></a></li>
                     <li><a href="#">Salir <i class="uk-icon-power-off"></i></a></li>
-                </ul>
+                </ul></div>
             </li>
         </ul>
     </div>
@@ -282,5 +282,6 @@
     //$(".item").not(" :first").hide();
     
 </script>
-</body>
-</html>
+
+
+</body></html>
