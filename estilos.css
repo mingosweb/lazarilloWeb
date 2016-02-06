@@ -386,6 +386,7 @@ img.avatar-profile{
 #main-panel{
     margin-top: 3em !important;
     padding: 0em 4em;
+    margin-left: 0em;
 }
 
 .panel-section{
@@ -639,7 +640,6 @@ img.avatar-child{
     }
     
     #main-panel{
-        margin: 0.5em;
         padding: 0em 1em !important;
     }
     
