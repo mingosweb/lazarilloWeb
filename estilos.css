@@ -54,6 +54,7 @@
     color: white;
     border: 0.16em solid white;
     -webkit-border-radius: 1em;
+    border-radius: 1em;
     -o-border-radius: 1em;
     -moz-border-radius: 1em;
 }
@@ -80,6 +81,7 @@
     background: #ffe8bd;
     border-bottom: 0.4em solid #ff8900;
     border-top: 0.4em solid #ff8900;
+    border-radius: 1em;
     -webkit-border-radius: 1em;
     -o-border-radius: 1em;
     -moz-border-radius: 0px 0em 1em 1em;
@@ -95,6 +97,7 @@
     color: cornsilk;
     background: transparent;
     border: 1px solid white;
+    border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -o-border-radius: 10px;
@@ -124,6 +127,7 @@
     color: white;
     background: transparent;
     border: 0.2em solid white;
+    border-radius: 1em;
     -webkit-border-radius: 1em;
     -moz-border-radius: 1em;
     -o-border-radius: 1em;
@@ -136,6 +140,7 @@
     color: white;
     background: rgba(255, 100, 42, 0.73);
     border: 0.2em solid white;
+    border-radius: 1em;
     -webkit-border-radius: 1em;
     -moz-border-radius: 1em;
     -o-border-radius: 1em;
@@ -210,6 +215,7 @@
     width: 100%;
     height: 2em;
     padding-left: 0.5em;
+    border-radius: 1em;
     -webkit-border-radius: 1em;
     -moz-border-radius: 1em;
     -o-border-radius: 1em;
@@ -256,6 +262,7 @@ section#content-account{
     width: 90%;
     margin: auto;
     padding: 1em;
+    box-shadow: 0em 0em 0.3em #8e8d8d;
     -webkit-box-shadow: 0em 0em 0.3em #8e8d8d;
     -moz-box-shadow: 0em 0em 0.3em #8e8d8d;
     -o-box-shadow: 0em 0em 0.3em #8e8d8d;
@@ -288,6 +295,7 @@ section#content-account{
     color: orangered;
     background: transparent;
     border: 0.2em solid orangered;
+    border-radius: 1em;
     -webkit-border-radius: 1em;
     -moz-border-radius: 1em;
     -o-border-radius: 1em;
@@ -300,6 +308,7 @@ section#content-account{
 
 .container-title-resource{
     /*border-bottom: 0.1em solid orangered;*/
+    box-shadow: 0em 0.05em 0.04em #bcbcbc;
     -webkit-box-shadow: 0em 0.05em 0.04em #bcbcbc;
     -moz-box-shadow: 0em 0.05em 0.04em #bcbcbc;
     -o-box-shadow: 0em 0.05em 0.04em #bcbcbc;
@@ -324,11 +333,17 @@ section#content-account{
     border-left: 0.5em solid orangered;
 }
 
+.uk-nav-offcanvas ul a{
+    height: 2em;
+}
+
 .navbar-menu-container{
     border: 0.2em solid orange;
+    border-radius: 0 0 2em 2em;
     -webkit-border-radius: 0 0 2em 2em;
     -moz-border-radius: 0 0 2em 2em;
     -o-border-radius: 0 0 2em 2em;
+    box-shadow: 0em 0.05em 0.04em #bcbcbc;
     -webkit-box-shadow: 0em 0.05em 0.04em #bcbcbc;
     -moz-box-shadow: 0em 0.05em 0.04em #bcbcbc;
     -o-box-shadow: 0em 0.05em 0.04em #bcbcbc;
@@ -378,6 +393,7 @@ section#content-account{
 
 .inputFalse{
     border: 2px solid #dedede;
+    border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -o-border-radius: 50%;
@@ -402,6 +418,7 @@ input[type="radio"]:checked + span:after{
 #form-register input[type="submit"]{
     background: orange;
     color: white;
+    border-radius: 1em;
     -webkit-border-radius: 1em;
     -moz-border-radius: 1em;
     -o-border-radius: 1em;
@@ -411,9 +428,11 @@ input[type="radio"]:checked + span:after{
 
 #form-register input[type="submit"]:hover{
     background: orangered;
+    box-shadow: 0em 0.2em 0.1em gray;
     -webkit-box-shadow: 0em 0.2em 0.1em gray;
     -moz-box-shadow: 0em 0.2em 0.1em gray;
     -o-box-shadow: 0em 0.2em 0.1em gray;
+    transform: scale(0.1em);
     -webkit-transform: scale(0.1em);
     -moz-transform: scale(0.1em);
     -o-transform: scale(0.1em);
@@ -434,6 +453,7 @@ img.avatar-profile{
     margin: auto;
     height: 45px;
     width: 45px;
+    border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -o-border-radius: 50%;
@@ -443,6 +463,7 @@ img.avatar-profile{
 .title-section{
     color: white;
     background: orange;
+    border-radius: 0em 0em 2em 2em;
     -webkit-border-radius: 0em 0em 2em 2em;
     -moz-border-radius: 0em 0em 2em 2em;
     -o-border-radius: 0em 0em 2em 2em;
@@ -450,6 +471,10 @@ img.avatar-profile{
     border-bottom: 0.2em solid red;
     width: 10em;
     text-align: center;
+}
+
+h3.title-section{
+    padding: 0em  0.8em;
 }
 
 .uk-overlay-panel{
@@ -464,16 +489,17 @@ img.avatar-profile{
 #main-panel{
     margin-top: 3em !important;
     padding: 0em 4em;
-    margin-left: 0em;
 }
 
 .panel-section{
     margin: 1em auto;
     border: 0.1em solid orange;
     border-bottom: none;
+    border-radius: 0 0em 2em 2em;
     -webkit-border-radius: 0 0em 2em 2em;
     -moz-border-radius: 0 0em 2em 2em;
     -o-border-radius: 0 0em 2em 2em;
+    box-shadow: 0em -0.1em 0.01em rgba(255, 240, 211, 0.91);
     -webkit-box-shadow: 0em -0.1em 0.01em rgba(255, 240, 211, 0.91);
     -moz-box-shadow: 0em -0.1em 0.01em rgba(255, 240, 211, 0.91);
     -o-box-shadow: 0em -0.1em 0.01em rgba(255, 240, 211, 0.91);
@@ -488,6 +514,7 @@ img.avatar-profile{
 .panel-info-child{
     border: 0.1em dashed rgba(255, 147, 0, 0.77);
     border-bottom: 0.3em solid rgba(191, 112, 3, 0.77);
+    border-radius: 1em;
     -webkit-border-radius: 1em;
     -moz-border-radius: 1em;
     -o-border-radius: 1em;
@@ -503,6 +530,7 @@ img.avatar-profile{
     width: 40%;
     top: 0px;
     right: 0px;
+    border-radius: 0 .6em 0 1em;
     -webkit-border-radius: 0 .6em 0 1em;
     -moz-border-radius: 0 .6em 0 1em;
     -o-border-radius: 0 .6em 0 1em;
@@ -513,6 +541,7 @@ img.avatar-child{
     margin: auto;
     height: 80px;
     width: 80px;
+    border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -o-border-radius: 50%;
@@ -535,6 +564,7 @@ img.avatar-child{
 .panel-game{
     border: 0.1em solid rgba(255, 147, 0, 0.77);
     background: rgba(250, 220, 164, 0.87);
+    box-shadow: 0em 0.3em 0.2em #d6d6d6;
     -webkit-box-shadow: 0em 0.3em 0.2em #d6d6d6;
     -moz-box-shadow: 0em 0.3em 0.2em #d6d6d6;
     -o-box-shadow: 0em 0.3em 0.2em #d6d6d6;
@@ -572,6 +602,7 @@ img.avatar-child{
 .button-free{
     background: #00c700;
     border-bottom: 0.2em solid #015301;
+    border-radius: 1em;
     -webkit-border-radius: 1em;
     -moz-border-radius: 1em;
     -o-border-radius: 1em;
@@ -580,6 +611,7 @@ img.avatar-child{
 
 #categoria-select{
     height: 2em;
+    border-radius: 5em;
     -webkit-border-radius: 5em;
     -moz-border-radius: 5em;
     -o-border-radius: 5em;
@@ -596,6 +628,7 @@ img.avatar-child{
 
 .panel-profile{
     background: rgba(255, 215, 144, 0.38);
+    box-shadow: 0em 0.2em 0.3em #8e8d8d;
     -webkit-box-shadow: 0em 0.2em 0.3em #8e8d8d;
     -moz-box-shadow: 0em 0.2em 0.3em #8e8d8d;
     -o-box-shadow: 0em 0.2em 0.3em #8e8d8d;
@@ -609,7 +642,7 @@ img.avatar-child{
     border-bottom: 0.1em solid orangered;
 }
 
-.panel-profile .uk-panel-badge button{
+.panel-profile .uk-panel-badge a{
     background: orangered;
     color: white;
     border-bottom: 0.1em solid orange;
@@ -629,7 +662,16 @@ img.avatar-child{
     padding: 0 20px !important;
 }
 
+.uk-panel-details{
+    padding: 0.4em !important;
+}
+
+.uk-panel-details ul.uk-grid li.container-resource .panel-game{
+    margin: 0.2em !important;
+}
+
 img.img-perfil{
+    border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -o-border-radius: 50%;
@@ -640,6 +682,7 @@ img.img-perfil{
 
 .button-free:hover{
     background: #008e00;
+    border-radius: 1em;
     -webkit-border-radius: 1em;
     -moz-border-radius: 1em;
     -o-border-radius: 1em;
@@ -650,6 +693,7 @@ img.img-perfil{
     background: yellow;
     color: orange;
     border-bottom: 0.2em solid orange;
+    border-radius: 1em;
     -webkit-border-radius: 1em;
     -moz-border-radius: 1em;
     -o-border-radius: 1em;
@@ -657,6 +701,7 @@ img.img-perfil{
 
 .button-premium:hover{
     background: #ffffa1;
+    border-radius: 1em;
     -webkit-border-radius: 1em;
     -moz-border-radius: 1em;
     -o-border-radius: 1em;
@@ -759,8 +804,8 @@ img.img-perfil{
         width: 90%;
     }
     
+    
     #form-register .uk-grid:nth-child(3) [class*=uk-width]:nth-child(2) > *{
-        background: rgba(233,34,54,0.2);
         margin-top: 1em !important;
     }
     
@@ -788,6 +833,7 @@ img.img-perfil{
         color: white !important;
         background: transparent !important;
         border: 0.2em solid white !important;
+        border-radius: 1em !important;
         -webkit-border-radius: 1em !important;
         -moz-border-radius: 1em !important;
         -o-border-radius: 1em !important;

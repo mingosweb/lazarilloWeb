@@ -11,15 +11,9 @@
     <link rel="stylesheet" href="owl-carousel/owl.theme.css">
     <style type="text/css"></style><script src="js/jquery-1.11.3.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-    <script src="js/uikit.min.js"></script>
-    <script src="js/components/slider.js"></script>
-    <script src="js/components/lightbox.min.js"></script>
-    <script src="js/components/slideshow.min.js"></script>
-    <script src="js/components/slideset.js"></script>
-    <script src="js/components/slideshow-fx.min.js"></script> 
     <script src="js/components/sticky.min.js"></script>
 </head>
-<body class="uk-height-1-1">
+<body>
 
 <!-- NAVBAR -->
 
@@ -42,9 +36,6 @@
             <li>
                 <a href="videos.html">Videos</a>
             </li>
-            <li class="uk-hidden-medium">
-                <a href="registro.html">Login</a>
-            </li>
         </ul>       
     </div>
             
@@ -58,7 +49,7 @@
                             <li><a href="#">Editar Perfil <i class="uk-icon-edit"></i></a></li>
                             <li class="uk-nav-header">CUENTA</li>
                             <li><a href="#">Carro de compras <i class="uk-icon-cart-plus"></i></a></li>
-                            <li><a href="addchildren.html">Configuración <i class="uk-icon-cog"></i></a></li>
+                            <li><a href="config.html">Configuración <i class="uk-icon-cog"></i></a></li>
                             <li class="uk-nav-divider"></li>
                             <li><a href="#">Ayuda <i class="uk-icon-power-off"></i></a></li>
                             <li class="uk-nav-divider"></li>
@@ -91,7 +82,7 @@
             
                 <div class="uk-panel panel-profile uk-margin-small">
                    <div class="uk-panel-title"><h2 class="uk-h2 uk-text-center">Perfil</h2></div>
-                    <div class="uk-panel-badge">  <button class="uk-button"><i class="uk-icon-pencil"></i></button> </div>
+                    <div class="uk-panel-badge">  <a href="config.html" class="uk-button"><i class="uk-icon-pencil"></i></a> </div>
                     <div class="uk-panel-teaser">
                            <img src="perfil.jpg" alt="" class="img-perfil uk-align-center">
                     </div>
@@ -119,7 +110,7 @@
                     </div>
                 </div>
             
-            <div class="panel-section">
+            <div class="panel-section recent-game">
                 <h3 class="uk-h3 title-section uk-text-center uk-align-center">Actividad Reciente</h3>
                 <div class="uk-panel uk-panel-box panel-game">
                                     <div class="uk-panel-teaser">
@@ -205,7 +196,10 @@
                         <figure class="uk-overlay uk-overlay-hover">
                             <img src="Background_cuadrado.png" class="uk-overlay-scale" alt="">
                             <figcaption class="uk-overlay-panel uk-overlay-slide-top">
-                                <div class="blog-panel-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, hic, nisi. Debitis perspiciatis aut veniam aperiam sint deserunt officia laborum velit dolor ducimus omnis, vitae magni culpa reiciendis, sapiente voluptatibus.</div>
+                                <div class="blog-panel-info">
+                                <h3><a href="#">Titulo de la noticia pero bien largo.. ya tu sabes</a></h3>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, hic, nisi. Debitis perspiciatis aut veniam aperiam sint deserunt officia laborum velit dolor ducimus omnis, vitae magni culpa reiciendis, sapiente voluptatibus.
+                                </div>
                             </figcaption>
                         </figure>
                 </li>
@@ -213,7 +207,9 @@
                         <figure class="uk-overlay uk-overlay-hover">
                             <img src="Background_cuadrado.png" class="uk-overlay-scale" alt="">
                             <figcaption class="uk-overlay-panel uk-overlay-slide-top">
-                                <div class="blog-panel-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, hic, nisi. Debitis perspiciatis aut veniam aperiam sint deserunt officia laborum velit dolor ducimus omnis, vitae magni culpa reiciendis, sapiente voluptatibus.</div>
+                                <div class="blog-panel-info">
+                                <h3><a href="#">Titulo de la noticia pero bien largo.. ya tu sabes</a></h3>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, hic, nisi. Debitis perspiciatis aut veniam aperiam sint deserunt officia laborum velit dolor ducimus omnis, vitae magni culpa reiciendis, sapiente voluptatibus.</div>
                             </figcaption>
                         </figure>
                 </li>
@@ -221,7 +217,9 @@
                         <figure class="uk-overlay uk-overlay-hover">
                             <img src="Background_cuadrado.png" class="uk-overlay-scale" alt="">
                             <figcaption class="uk-overlay-panel uk-overlay-slide-top">
-                                <div class="blog-panel-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, hic, nisi. Debitis perspiciatis aut veniam aperiam sint deserunt officia laborum velit dolor ducimus omnis, vitae magni culpa reiciendis, sapiente voluptatibus.</div>
+                                <div class="blog-panel-info">
+                                <h3><a href="#">Titulo de la noticia pero bien largo.. ya tu sabes</a></h3>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, hic, nisi. Debitis perspiciatis aut veniam aperiam sint deserunt officia laborum velit dolor ducimus omnis, vitae magni culpa reiciendis, sapiente voluptatibus.</div>
                             </figcaption>
                         </figure>
                 </li>
@@ -248,9 +246,8 @@
                 <a href="#"><i class="uk-icon-user"></i> Username</a>
                 <div style="overflow:hidden;height:0;position:relative;" class="uk-hidden"><ul class="uk-nav-sub">
                     <li><a href="#">Ver perfil <i class="uk-icon-child"></i></a></li>
-                    <li><a href="#">Editar Perfil <i class="uk-icon-edit"></i></a></li>
                     <li><a href="#">Carro de compras <i class="uk-icon-cart-plus"></i></a></li>
-                    <li><a href="addchildren.html">Configuración <i class="uk-icon-cog"></i></a></li>
+                    <li><a href="config.html">Configuración <i class="uk-icon-cog"></i></a></li>
                     <li><a href="#">Ayuda <i class="uk-icon-question-circle"></i></a></li>
                     <li><a href="#">Salir <i class="uk-icon-power-off"></i></a></li>
                 </ul></div>
@@ -259,29 +256,7 @@
     </div>
 </div>
 
-<script src="owl-carousel/owl.carousel.min.js"></script>
-<script>
-    
-    $(window).ready(function(){
-        $("#owl-blog").owlCarousel({
-        slideSpeed : 300,
-        items: 3,
-        itemsMobile: [479,2],
-        itemsTablet: [768,3],
-        paginationSpeed : 400,
-        // Navigation
-        autoPlay: true,
-        rewindNav : true,
-        scrollPerPage : true,
-        responsive: true,
-        //Pagination
-        paginationNumbers: false
-    });    
-    });
-    
-    //$(".item").not(" :first").hide();
-    
-</script>
+<script src="js/uikit.min.js"></script>
 
-
-</body></html>
+</body>
+</html>
