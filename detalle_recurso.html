@@ -11,29 +11,24 @@
     <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
     <link rel="stylesheet" href="owl-carousel/owl.theme.css">
     <script src="js/jquery-1.11.3.min.js"></script>
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-    <script src="js/uikit.min.js"></script>
-    <script src="js/components/slider.js"></script>
-    <script src="js/components/lightbox.min.js"></script>
-    <script src="js/components/slideshow.min.js"></script>
-    <script src="js/components/slideset.js"></script>
-    <script src="js/components/slideshow-fx.min.js"></script> 
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script> 
     <script src="js/components/sticky.min.js"></script>
 </head>
 <body class="uk-height-1-1">
 
 <!-- NAVBAR -->
 
-<nav id="nave" class="uk-navbar" data-uk-sticky>
+<div class="uk-sticky-placeholder" style="height: 68px; margin: 0px;">
+  <nav id="nave" class="uk-navbar uk-sticky-init uk-active" data-uk-sticky="" style="position: fixed; top: 0px; width: 1349px; left: 0px;">
    
-    <a class="uk-navbar-brand uk-hidden-small" href="index.html">Lazarillo</a>
+    <a class="uk-navbar-brand uk-hidden-small uk-hidden-medium" href="index.html">Lazarillo</a>
     
-    <div class="uk-navbar-content uk-hidden-small">            
-        <ul class="uk-navbar-nav uk-hidden-small">
-            <li class="uk-text-middle">
+    <div class="uk-navbar-content uk-hidden-small uk-hidden-medium">            
+        <ul class="uk-navbar-nav uk-hidden-small uk-hidden-medium">
+            <li class="uk-text-middle uk-active">
                 <a href="index.html">Dashboard</a>
             </li>
-            <li class="uk-text-middle uk-active">
+            <li class="uk-text-middle">
                 <a href="actividades.html">Actividades</a>
             </li>
             <li>
@@ -49,16 +44,16 @@
     </div>
             
     <div class="uk-navbar-content uk-navbar-flip">
-        <ul class="uk-navbar-nav" data-uk-nav>
-            <li class="uk-parent uk-navbar-flip uk-hidden-small" data-uk-dropdown="{mode:click}">
-                <img class="avatar-profile" src="Background_cuadrado.png" class=".uk-comment-avatar" alt="">
-                    <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-top navbar-menu-container" style="top: -218px; left: 0px;">
+        <ul class="uk-navbar-nav" data-uk-nav="">
+            <li class="uk-parent uk-navbar-flip uk-hidden-small" data-uk-dropdown="{mode:click}" aria-haspopup="true" aria-expanded="false">
+                <img class="avatar-profile" src="Background_cuadrado.png" alt="">
+                    <div class="uk-dropdown uk-dropdown-navbar navbar-menu-container uk-dropdown-bottom" style="top: 45px; left: -155px;">
                         <ul class="uk-nav uk-nav-navbar navbar-menu">
                             <li><a href="#">Ver perfil <i class="uk-icon-child"></i></a></li>
                             <li><a href="#">Editar Perfil <i class="uk-icon-edit"></i></a></li>
                             <li class="uk-nav-header">CUENTA</li>
                             <li><a href="#">Carro de compras <i class="uk-icon-cart-plus"></i></a></li>
-                            <li><a href="#">Configuración <i class="uk-icon-cog"></i></a></li>
+                            <li><a href="config.html">Configuración <i class="uk-icon-cog"></i></a></li>
                             <li class="uk-nav-divider"></li>
                             <li><a href="#">Ayuda <i class="uk-icon-power-off"></i></a></li>
                             <li class="uk-nav-divider"></li>
@@ -69,20 +64,20 @@
         </ul>
     </div>
             
-    <div class="uk-navbar-content uk-navbar-flip uk-hidden-small">
+    <div class="uk-navbar-content uk-navbar-flip uk-hidden-small uk-hidden-medium">
         <div class="uk-form-icon">
             <i class="uk-icon-search"></i>
             <input type="text" placeholder="Buscar en lazarillo">
         </div>
     </div>
 
-    <div class="uk-container uk-container-center">
-        <a data-uk-offcanvas="{target:'#offcanvas-3'}" class="uk-navbar-toggle uk-visible-small"></a>
-        <div class="uk-navbar-brand  uk-visible-small uk-hidden-large uk-hidden-medium">
-            <img src="" title="Lazarillo" alt="Lazarillo">
+    <div id="toggle-menu" class="uk-navbar-content uk-hidden-large">
+        <a data-uk-offcanvas="{target:'#offcanvas-3'}" class="uk-navbar-toggle"></a>
+        <div class="uk-navbar-brand">
+            <a href="index.html">Lazarillo</a>
         </div>
     </div>
-</nav>
+</nav></div>
 
 <!-- CONTENIDO -->        
 <div id="main-panel" class="uk-container-center uk-width-4-5 uk-margin-large-top">
@@ -91,7 +86,14 @@
                 <div class="uk-width-medium-1-1 uk-width-large-2-3">
                         
                 <div class="uk-container-center">
-                    <h2>BOMBARDEO VOCAL</h2>                        
+                   <nav class="uk-navbar navbar-title-resource">
+                       <div class="uk-navbar-content">
+                           <span>Bombardeo Vocal</span>
+                       </div>
+                        <div class="uk-nabvar-content uk-navbar-flip">
+                            <button class="uk-button"><i class="uk-icon-heart"></i></button>                        
+                        </div>
+                   </nav>
                         <hr>
                         
                         <div class="uk-panel panel-game">
@@ -238,9 +240,8 @@
                 <a href="#"><i class="uk-icon-user"></i> Username</a>
                 <ul class="uk-nav-sub">
                     <li><a href="#">Ver perfil <i class="uk-icon-child"></i></a></li>
-                    <li><a href="#">Editar Perfil <i class="uk-icon-edit"></i></a></li>
                     <li><a href="#">Carro de compras <i class="uk-icon-cart-plus"></i></a></li>
-                    <li><a href="#">Configuración <i class="uk-icon-cog"></i></a></li>
+                    <li><a href="config.html">Configuración <i class="uk-icon-cog"></i></a></li>
                     <li><a href="#">Ayuda <i class="uk-icon-question-circle"></i></a></li>
                     <li><a href="#">Salir <i class="uk-icon-power-off"></i></a></li>
                 </ul>
@@ -248,6 +249,6 @@
         </ul>
     </div>
 </div>
-
+<script src="js/uikit.min.js"></script>
 </body>
 </html>
